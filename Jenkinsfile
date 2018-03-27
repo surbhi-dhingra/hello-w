@@ -20,6 +20,7 @@ pipeline {
         parallel(
           "step3": {
             echo 'to step 3'
+            waitForQualityGate()
             
           },
           "step 4": {
